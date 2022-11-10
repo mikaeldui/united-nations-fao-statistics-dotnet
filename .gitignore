@@ -348,4 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-UnitedNations.Fao.Statistics.Fisheries.Asfis/Species.g.cs
+
+# Custom
+*.g.cs

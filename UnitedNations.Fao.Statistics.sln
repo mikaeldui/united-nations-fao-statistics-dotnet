@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis", "UnitedNations.Fao.Statistics.Fisheries.Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj", "{9340C51C-CC49-48DD-A353-047263DEE4FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis", "Fisheries\Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj", "{9340C51C-CC49-48DD-A353-047263DEE4FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests", "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests\UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests.csproj", "{60BD31A4-D861-4113-83F0-E0840E01E001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests", "Fisheries\Asfis.Tests\UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests.csproj", "{60BD31A4-D861-4113-83F0-E0840E01E001}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration", "UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration\UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration.csproj", "{5CB3605B-1C96-4612-9E01-54F4E798E7EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration", "Fisheries\Asfis.CodeGeneration\UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration.csproj", "{5CB3605B-1C96-4612-9E01-54F4E798E7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitedNations.Fao.Statistics.Fisheries.Isscaap", "UnitedNations.Fao.Statistics.Fisheries.Isscaap\UnitedNations.Fao.Statistics.Fisheries.Isscaap.csproj", "{FEFC0A18-DF53-4643-BC31-06E0A96937AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Isscaap", "Fisheries\Isscaap\UnitedNations.Fao.Statistics.Fisheries.Isscaap.csproj", "{FEFC0A18-DF53-4643-BC31-06E0A96937AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Asfis", "Asfis", "{0D383F0F-CB8F-4B9B-8E57-D5A5A147C9B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Isscaap", "Isscaap", "{6D5A08BF-1135-442A-9CBD-FC5F6CB53E94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9340C51C-CC49-48DD-A353-047263DEE4FE} = {0D383F0F-CB8F-4B9B-8E57-D5A5A147C9B3}
+		{60BD31A4-D861-4113-83F0-E0840E01E001} = {0D383F0F-CB8F-4B9B-8E57-D5A5A147C9B3}
+		{5CB3605B-1C96-4612-9E01-54F4E798E7EE} = {0D383F0F-CB8F-4B9B-8E57-D5A5A147C9B3}
+		{FEFC0A18-DF53-4643-BC31-06E0A96937AC} = {6D5A08BF-1135-442A-9CBD-FC5F6CB53E94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5495609-5D50-4ED5-ADE0-23E08B9EF56D}

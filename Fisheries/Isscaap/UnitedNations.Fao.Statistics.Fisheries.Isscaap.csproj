@@ -10,10 +10,10 @@
 	  <Authors>Mikael Dúi Bolinder</Authors>
 	  <Product>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Isscaap</Product>
 	  <Description>International standard statistical classification of aquatic animals and plants.</Description>
-	  <PackageProjectUrl>https://github.com/mikaeldui/united-nations-fao-statistics-fisheries-asfis-dotnet</PackageProjectUrl>
+	  <PackageProjectUrl>https://github.com/mikaeldui/united-nations-fao-statistics-dotnet</PackageProjectUrl>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <PackageIcon>UnitedNations.Fao.Statistics.Fisheries.Asfis.png</PackageIcon>
-	  <RepositoryUrl>https://github.com/mikaeldui/united-nations-fao-statistics-fisheries-asfis-dotnet</RepositoryUrl>
+	  <PackageIcon>UnitedNations.Fao.png</PackageIcon>
+	  <RepositoryUrl>https://github.com/mikaeldui/united-nations-fao-statistics-dotnet</RepositoryUrl>
 	  <PackageTags>isscaap;asfis;fao;united nations</PackageTags>
 	  <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
 	  <AssemblyName>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Isscaap</AssemblyName>
@@ -21,11 +21,11 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\UnitedNations.Fao.Statistics.Fisheries.Asfis.png">
+		<None Include="..\..\UnitedNations.Fao.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>

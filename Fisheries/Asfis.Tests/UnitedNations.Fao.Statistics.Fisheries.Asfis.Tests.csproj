@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UnitedNations.Fao.Statistics.Fisheries.Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj" />
+    <ProjectReference Include="..\Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj" />
   </ItemGroup>
 
 </Project>
