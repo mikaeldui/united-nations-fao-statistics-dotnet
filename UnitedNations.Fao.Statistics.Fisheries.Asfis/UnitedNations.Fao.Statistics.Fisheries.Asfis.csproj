@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>UnitedNations.Fao.Statistics.Fisheries</RootNamespace>
+    <PackageId>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis</PackageId>
+    <Authors>Mikael Dúi Bolinder</Authors>
+    <Product>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis</Product>
+    <Description>This project is really awesome!</Description>
+    <PackageProjectUrl>https://github.com/mikaeldui/united-nations-fao-statistics-fisheries-asfis-dotnet</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>UnitedNations.Fao.Statistics.Fisheries.Asfis.png</PackageIcon>
+    <RepositoryUrl>https://github.com/mikaeldui/united-nations-fao-statistics-fisheries-asfis-dotnet</RepositoryUrl>
+    <PackageTags></PackageTags>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <AssemblyName>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\UnitedNations.Fao.Statistics.Fisheries.Asfis.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MikaelDui.Extensions" Version="*" />
+  </ItemGroup>
+
+</Project>
