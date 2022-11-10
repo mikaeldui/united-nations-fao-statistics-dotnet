@@ -15,3 +15,8 @@ You can install it using the following **.NET CLI** command:
 
     dotnet add package MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis --version *
 
+## ISSCAAP
+
+You can install it using the following **.NET CLI** command:
+
+    dotnet add package MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Isscaap --version *
