@@ -1,6 +1,9 @@
 namespace UnitedNations.Fao.Statistics.Fisheries
 {
-    public enum Isscaap
+    /// <summary>
+    /// Provides friendly division names for ISSCAAP codes.
+    /// </summary>
+    public enum Isscaap : byte
     {
         // Freshwater fishes = 1
         CarpsBarbelsAndOtherCyprinids = 11,
@@ -74,7 +77,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapFreshwaterFishes
+    public enum IsscaapFreshwaterFishes : byte
     {
         CarpsBarbelsAndOtherCyprinids = 11,
         TilapiasAndOtherCichlids = 12,
@@ -84,7 +87,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapDiadromousFishes
+    public enum IsscaapDiadromousFishes : byte
     {
         SturgeonsPaddlefishes = 21,
         RiverEels = 22,
@@ -96,7 +99,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapMarineFishes
+    public enum IsscaapMarineFishes : byte
     {
         FloundersHalibutsSoles = 31,
         CodsHakesHaddocks = 32,
@@ -112,7 +115,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapCrustaceans
+    public enum IsscaapCrustaceans : byte
     {
         FreshwaterCrustaceans = 41,
         CrabsSeaspiders = 42,
@@ -126,7 +129,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapMolluscs
+    public enum IsscaapMolluscs : byte
     {
         FreshwaterMolluscs = 51,
         AbalonesWinklesConchs = 52,
@@ -141,7 +144,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapWhalesSealsAndOtherAquaticMammals
+    public enum IsscaapWhalesSealsAndOtherAquaticMammals : byte
     {
         BluewhalesFinwhales = 61,
         SpermwhalesPilotwhales = 62,
@@ -152,7 +155,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapMiscellaneousAquaticAnimals
+    public enum IsscaapMiscellaneousAquaticAnimals : byte
     {
         FrogsAndOtherAmphibians = 71,
         Turtles = 72,
@@ -166,7 +169,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapMiscellaneousAquaticAnimalProducts
+    public enum IsscaapMiscellaneousAquaticAnimalProducts : byte
     {
         PearlsMotherofpearlShells = 81,
         Corals = 82,
@@ -176,7 +179,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
     /// <summary>
     /// Simply contains a subset of <see cref="Isscaap"/>.
     /// </summary>
-    public enum IsscaapAquaticPlants
+    public enum IsscaapAquaticPlants : byte
     {
         BrownSeaweeds = 91,
         RedSeaweeds = 92,
