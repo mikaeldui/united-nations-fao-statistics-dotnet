@@ -1,54 +1,15 @@
-# NuGet Package Template Repository
-A template repository for NuGet packages.
-
-Add this to the repo description when creating it: (", " is special)
-
-    ProjectName: MyAwesomeProject.Api,
-    Prefix: Meeee,
-    Namespace: MyAwesomeProject,
-    Description: This project is really awesome!,
-    Tags: Awesomeness; Project; 1000,
-    Package: Optional.Package.ToReference
-
-Prefix is merged with ProjectName where needed, like for the package name.
-
-`NUGET_ORG_API_KEY` needs to be added as a secret for the `nuget.org` environment.
-
-The repo description must be manually changed afterwards since the workflow doesn't have permission to change it for you.
-
-## Contains
-
-    root/
-    ├─ .github/
-    │  ├─ workflows/
-    │  │  ├─ codeql-analysis.yml
-    │  │  ├─ dotnet.yml
-    │  ├─ dependabot.yml
-    ├─ ProjectName/
-    │  ├─ ProjectName.csproj
-    │  ├─ Class1.cs
-    ├─ ProjectName.Tests/
-    │  ├─ ProjectName.Tests.csproj
-    │  ├─ TestClass1.cs
-    ├─ .gitignore
-    ├─ LICENSE    
-    ├─ ProjectName.sln
-    ├─ ProjectName.png
-    ├─ README.md
-    ├─ SECURITY.md
-    
-## Thanks
-
-Thanks to [Liam Gulliver](https://github.com/lgulliver) for his great [tutorial](https://lgulliver.github.io/dynamically-generate-projects-with-github-templates-and-actions/).
-
-<!--
-# UnitedNations.Fao.Fisheries.Asfis
+# UnitedNations.Fao.Statistics.Fisheries.Asfis
 [![.NET](https://github.com/mikaeldui/united-nations-fao-fisheries-asfis-dotnet/actions/workflows/dotnet.yml/badge.svg)](https://github.com/mikaeldui/united-nations-fao-fisheries-asfis-dotnet/actions/workflows/dotnet.yml)
 [![CodeQL Analysis](https://github.com/mikaeldui/united-nations-fao-fisheries-asfis-dotnet/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/mikaeldui/united-nations-fao-fisheries-asfis-dotnet/actions/workflows/codeql-analysis.yml)
 
-This NuGet package is really awesome!
+The FAO Statistics Team (NFISS) of Fisheries and Aquaculture Division collates world capture and aquaculture production statistics at either the species, genus, family or higher taxonomic levels in 3 175 statistical categories (2022 data release) referred to as species items.
+
+ASFIS list of species includes 13 420 species items selected according to their interest or relation to fisheries and aquaculture. 
+For each species item stored in a record, codes (ISSCAAP group, taxonomic and 3-alpha) and taxonomic information (scientific name, author(s), family, and higher taxonomic classification) are provided. 
+An English name is available for most of the records, and about one third of them have also a French and Spanish name. 
+Information is also provided about the availability of fishery production statistics on the species item in the FAO databases.
 
 You can install it using the following **.NET CLI** command:
 
-    dotnet add package MikaelDui.UnitedNations.Fao.Fisheries.Asfis --version *
--->
+    dotnet add package MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis --version *
+
