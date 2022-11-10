@@ -55,10 +55,19 @@ namespace UnitedNations.Fao.Statistics.Fisheries
         [MaxLength(30)]
         public string SpanishName { get; set; }
 
+        /// <summary>
+        /// "Arabic_name".
+        /// </summary>
         public string ArabicName { get; set; }
 
+        /// <summary>
+        /// "Chinese_name".
+        /// </summary>
         public string ChineseName { get; set; }
 
+        /// <summary>
+        /// "Russian_name".
+        /// </summary>
         public string RussianName { get; set; }
 
         /// <summary>
