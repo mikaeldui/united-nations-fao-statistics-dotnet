@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UnitedNations.Fao.Statistics.Fisheries
 {
     /// <summary>
     /// From https://www.fao.org/fishery/static/ASFIS/ASFIS_Structure.pdf.
     /// </summary>
-    public class Species
+    public partial class Species
     {
         /// <summary>
         /// "ISSCAAP". The ISSCAAP codes was assigned to all the species items included in the ASFIS list. The only species items to which has not been possible to attribute an ISSCAAP code are the sea birds and the sea snakes as these animals are not included in any ISSCAAP group.
@@ -17,7 +16,7 @@ namespace UnitedNations.Fao.Statistics.Fisheries
         /// <example>
         /// E.g. 11 = Carps, barbels and ather cyprinids. 1x = Freshwater fishes. See <see cref="Isscaap"/> and <see cref="http://www.fao.org/fishery/static/ASFIS/ISSCAAP.pdf"/>.
         /// </example>
-        public Isscaap Isscaap { get; set; }
+        public Isscaap? Isscaap { get; set; }
 
         /// <summary>
         /// "TAXOCODE". The taxonomic code is a ten-digit numerical code for classificatory purposes. In few special cases, three additional digits have been added.
@@ -47,28 +46,28 @@ namespace UnitedNations.Fao.Statistics.Fisheries
         /// "French_name". Only the French names of species items with production statistics have to be considered as official FAO French names; in all other cases they are suggested French names that should be verified before assigning them as an official FAO French name.
         /// </summary>
         [MaxLength(30)]
-        public string FrenchName { get; set; }
+        public string? FrenchName { get; set; }
 
         /// <summary>
         /// "Spanish_name". Only the Spanish names of species items with production statistics have to be considered as official FAO Spanish names; in all other cases they are suggested Spanish names that should be verified before assigning them as an official FAO Spanish name.
         /// </summary>
         [MaxLength(30)]
-        public string SpanishName { get; set; }
+        public string? SpanishName { get; set; }
 
         /// <summary>
         /// "Arabic_name".
         /// </summary>
-        public string ArabicName { get; set; }
+        public string? ArabicName { get; set; }
 
         /// <summary>
         /// "Chinese_name".
         /// </summary>
-        public string ChineseName { get; set; }
+        public string? ChineseName { get; set; }
 
         /// <summary>
         /// "Russian_name".
         /// </summary>
-        public string RussianName { get; set; }
+        public string? RussianName { get; set; }
 
         /// <summary>
         /// "Author". The author(s) of the scientific name is provided for 99% of the species names.

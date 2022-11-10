@@ -3,17 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis", "UnitedNations.Fao.Statistics.Fisheries.Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj", "{9340C51C-CC49-48DD-A353-047263DEE4FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis", "UnitedNations.Fao.Statistics.Fisheries.Asfis\UnitedNations.Fao.Statistics.Fisheries.Asfis.csproj", "{9340C51C-CC49-48DD-A353-047263DEE4FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests", "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests\UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests.csproj", "{60BD31A4-D861-4113-83F0-E0840E01E001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests", "UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests\UnitedNations.Fao.Statistics.Fisheries.Asfis.Tests.csproj", "{60BD31A4-D861-4113-83F0-E0840E01E001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration", "UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration\UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration.csproj", "{5CB3605B-1C96-4612-9E01-54F4E798E7EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9340C51C-CC49-48DD-A353-047263DEE4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{60BD31A4-D861-4113-83F0-E0840E01E001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60BD31A4-D861-4113-83F0-E0840E01E001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60BD31A4-D861-4113-83F0-E0840E01E001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB3605B-1C96-4612-9E01-54F4E798E7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB3605B-1C96-4612-9E01-54F4E798E7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB3605B-1C96-4612-9E01-54F4E798E7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB3605B-1C96-4612-9E01-54F4E798E7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5495609-5D50-4ED5-ADE0-23E08B9EF56D}
 	EndGlobalSection
 EndGlobal
