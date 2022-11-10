@@ -14,8 +14,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>UnitedNations.Fao.Statistics.Fisheries.Asfis.png</PackageIcon>
     <RepositoryUrl>https://github.com/mikaeldui/united-nations-fao-statistics-fisheries-asfis-dotnet</RepositoryUrl>
-    <PackageTags></PackageTags>
-    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+	  <PackageTags>isscaap;asfis;fao;united nations</PackageTags>
+	  <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <AssemblyName>MikaelDui.UnitedNations.Fao.Statistics.Fisheries.Asfis</AssemblyName>
   </PropertyGroup>
 
@@ -32,6 +32,10 @@
 
   <ItemGroup>
     <PackageReference Include="MikaelDui.Extensions" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitedNations.Fao.Statistics.Fisheries.Isscaap\UnitedNations.Fao.Statistics.Fisheries.Isscaap.csproj" />
   </ItemGroup>
 
 </Project>

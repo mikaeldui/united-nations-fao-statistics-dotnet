@@ -1,7 +1,7 @@
 namespace UnitedNations.Fao.Statistics.Fisheries
 {
     /// <summary>
-    /// Provides friendly division names for ISSCAAP codes.
+    /// International standard statistical classification of aquatic animals and plants. Provides friendly division names for ISSCAAP codes.
     /// </summary>
     public enum Isscaap : byte
     {
