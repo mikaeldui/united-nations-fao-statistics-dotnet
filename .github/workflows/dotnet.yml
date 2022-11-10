@@ -6,7 +6,47 @@ on:
 jobs:
   build:
     name: 'Build & Pack'
-    uses: mikaeldui/actions/.github/workflows/dotnet-build-and-pack.yml@main
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup .NET
+      uses: mikaeldui/actions/dotnet/setup@main
+        
+    - name: Get next version tag
+      id: tag
+      uses: mikaeldui/actions/create-tag@main
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        dry_run: true
+        
+    - name: Create SemVer suffix
+      id: semver
+      uses: mikaeldui/actions/nupkg/semver-suffix@main
+      
+      # Build & Test
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      shell: bash      
+      
+    - name: .NET Build
+      uses: mikaeldui/actions/nupkg/dotnet/build@main
+      with:
+        version: ${{ steps.tag.outputs.version }}${{ steps.semver.outputs.suffix }}
+      
+    - name: Test
+      run: dotnet test --no-build --configuration Release --verbosity normal
+      shell: bash
+      
+      # Pack & Publish
+      
+    - name: 'Pack & Publish Artifact'
+      uses: mikaeldui/actions/nupkg/dotnet/pack-and-publish-artifact@main
+      with:
+        version: ${{ steps.tag.outputs.version }}${{ steps.semver.outputs.suffix }}
+        project_directory: /Fisheries/Iscaap/
 
   nuget-org:
     name: 'NuGet.org'
