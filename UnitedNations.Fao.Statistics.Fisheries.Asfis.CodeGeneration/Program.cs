@@ -26,8 +26,8 @@ namespace UnitedNations.Fao.Statistics.Fisheries.Asfis.CodeGeneration
             {
                 var species = reader.ReadLine();
                 var fields = species!.Split(',').Select(f => f.Trim('"')).ToArray();
-                speciesWriter.WriteLine($"    public static Species {fields[3].Replace(" ", "").Replace("(", "").Replace(")", "").Replace(".", "").Replace("-", "").Replace(" ", "")} = new\r\n    {{");
-                if (!string.IsNullOrWhiteSpace(fields[0])) speciesWriter.WriteLine($"        Isscaap = {fields[0]},");
+                speciesWriter.WriteLine($"    public static Species {fields[3].Replace(" ", "").Replace("(", "").Replace(")", "").Replace(".", "").Replace("-", "").Replace(" ", "")} = new()\r\n    {{");
+                if (!string.IsNullOrWhiteSpace(fields[0])) speciesWriter.WriteLine($"        Isscaap = (Isscaap){fields[0]},");
                 speciesWriter.WriteLine($"        TaxonomicCode = \"{fields[1]}\",");
                 speciesWriter.WriteLine($"        Interagency3AlphaCode = \"{fields[2]}\",");
                 speciesWriter.WriteLine($"        ScientificName = \"{fields[3]}\",");
